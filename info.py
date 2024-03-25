@@ -11,9 +11,9 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'LazyPrincess')
-API_ID = int(environ.get('API_ID', '13323016'))
-API_HASH = environ.get('API_HASH', '68e791e616100248b0a53ae86a661a12')
+SESSION = environ.get('SESSION', 'Devil Donor')
+API_ID = int(environ.get('API_ID', '27972068'))
+API_HASH = environ.get('API_HASH', '6e7e2f5cdddba536b8e603b3155223c1')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 #Port
@@ -25,11 +25,11 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://graph.org/file/4411771cbdd03bbd6a894.jpg https://graph.org/file/4411771cbdd03bbd6a894.jpg https://graph.org/file/ccc3d5862669c70aca037.jpg https://graph.org/file/a8403656c2a7dc73e7746.jpg https://graph.org/file/027cdca40400c30443557.jpg https://graph.org/file/d36ab8ce21188a0b56a53.jpg https://graph.org/file/aab53eb0947e7185cda09.jpg https://graph.org/file/6b68f3eebb1446682ab46.jpg https://graph.org/file/842605d84aac5c1111936.jpg https://graph.org/file/dc5826e69f63c8ba13dc2.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1484670284').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5256724194 5546051083').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001620891165').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1484670284').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001765107260')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002024071739')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -40,7 +40,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001782419622'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002127050854'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LazyPrincessSupport')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), False)
